@@ -60,7 +60,7 @@ Knight's Arena is a thrilling turn-based game, drawing inspiration from chess, d
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/shubz23/21BCE11301-SHUBHAM-SAXENA_ChessGame
+   git clone https://github.com/shubz23/21BCE11301-Shubham-Saxena_Chess_Game
    ```
 
 2. **Navigate to the Project Directory:**
@@ -77,7 +77,7 @@ Knight's Arena is a thrilling turn-based game, drawing inspiration from chess, d
 4. **Start the Server:**
 
    ```bash
-   node server.js
+   node Server/server.js
    ```
 The server will start and listen on port 8081 by default. You can access it at http://localhost:8081.
 
