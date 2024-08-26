@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitwicket Chess Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="bungee-spice-regular">Knight's Arena</h1>
+    <div id="main-container" style="display: flex;">
+        <!-- Left Partition: Game Container -->
+        <div id="game-container" style="flex: 1; margin-right: 20px;">
+            <div id="game-board"></div>
+            <div id="controls">
+                <div id="player-a-controls">
+                    <input type="text" id="player-a-move" placeholder="A move (e.g., P1:F)">
+                    <button id="player-a-submit">Submit Move</button>
+                </div>
+                <div id="player-b-controls" style="display: none;">
+                    <input type="text" id="player-b-move" placeholder="B move (e.g., P1:L)">
+                    <button id="player-b-submit">Submit Move</button>
+                </div>
+            </div>
+            <!-- Game Status and Move History within Game Container -->
+            <div id="game-status"></div>
+            <div id="move-history" class="move-history">
+                <h2>Move History</h2>
+            </div>
+        </div>
+
+        <!-- Right Partition: Rules Container -->
+        <div id="rules-container" style="flex: 1;">
+            <h3 style="color: rgb(126, 33, 145);">To begin playing, enter --> Piece_name:Direction
+                (e.g., P1:F) in the provided text box.</h3>
+            <h2>Rules</h2>
+            <div id="pawn-rule">
+                <h3>Pawn (P1, P2, P3)</h3>
+                <ul>
+                    <li>L (left)</li>
+                    <li>R (right)</li>
+                    <li>F (forward)</li>
+                    <li>B (backward)</li>
+                </ul>
+            </div>
+            <div id="hero1-rule">
+                <h3>Hero 1 (2-block)</h3>
+                <ul>
+                    <li>L (left)</li>
+                    <li>R (right)</li>
+                    <li>F (forward)</li>
+                    <li>B (backward)</li>
+                </ul>
+            </div>
+            <div id="hero2-rule">
+                <h3>Hero 2 (2-block diagonally)</h3>
+                <ul>
+                    <li>FL (forward-left)</li>
+                    <li>FR (forward-right)</li>
+                    <li>BL (backward-left)</li>
+                    <li>BR (backward-right)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
